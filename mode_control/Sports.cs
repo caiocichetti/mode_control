@@ -38,5 +38,29 @@ namespace mode_control
            else
             { return false; }
         }
+
+        public string JsonSerialize()
+        {
+            string data;
+            data = JsonConvert.SerializeObject(this);
+            return data;
+        }
+
+        public string toJson
+        {
+            set
+            {
+                string data = value;
+                Sports des = JsonConvert.DeserializeObject<Sports>(data);
+
+                if (des != null)
+                {
+                    mode = des.Mode;
+                    minimal = des.Minimal;
+                    maximum = des.Maximum;
+                    mixed = des.Mixed;
+                }
+            }
+        }
     }
 }
