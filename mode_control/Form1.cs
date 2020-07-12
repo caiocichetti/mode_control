@@ -12,9 +12,13 @@ namespace mode_control
 {
     public partial class Form1 : Form
     {
+        ListSports data;
+
         public Form1()
         {
             InitializeComponent();
+            data = new ListSports();
+            dataGridView1.DataSource = data;
         }
     }
 }
