@@ -1,1 +1,14 @@
 C:\Users\caio\Documents\GitHub\mode_control\mode_control\bin\Debug\mode_control.exe.config
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\bin\Debug\mode_control.exe.config
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\bin\Debug\mode_control.exe
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\bin\Debug\mode_control.pdb
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\bin\Debug\Newtonsoft.Json.dll
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\bin\Debug\Newtonsoft.Json.pdb
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\bin\Debug\Newtonsoft.Json.xml
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.csprojAssemblyReference.cache
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.Properties.Resources.resources
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.csproj.GenerateResource.cache
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.csproj.CoreCompileInputs.cache
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.csproj.CopyComplete
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.exe
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.pdb
