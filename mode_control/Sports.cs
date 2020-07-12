@@ -22,5 +22,20 @@ namespace mode_control
             maximum = ma;
             mixed = mx;
         }
+
+        // Attributes
+        public string Mode { get { return mode; } set { mode = value; } }
+        public int Minimal { get { return minimal; } set { minimal = value; } }
+        public int Maximum { get { return maximum; } set { maximum = value; } }
+        public bool Mixed { get { return mixed; } set { mixed = value; } }
+
+        // Methods
+        public override bool Equals(object obj)
+        {
+           if (mode == ((Sports)obj).Mode)
+            { return true; }
+           else
+            { return false; }
+        }
     }
 }
