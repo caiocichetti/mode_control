@@ -31,15 +31,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.tMode = new System.Windows.Forms.TextBox();
+            this.tMinimal = new System.Windows.Forms.TextBox();
+            this.tMaximum = new System.Windows.Forms.TextBox();
+            this.cMixed = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.bInsert = new System.Windows.Forms.Button();
+            this.bDelete = new System.Windows.Forms.Button();
+            this.bUpdate = new System.Windows.Forms.Button();
+            this.bQuery = new System.Windows.Forms.Button();
+            this.rAll = new System.Windows.Forms.RadioButton();
+            this.rMixed = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,39 +76,40 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Máximo";
             // 
-            // textBox1
+            // tMode
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(40, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 3;
+            this.tMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tMode.Location = new System.Drawing.Point(40, 56);
+            this.tMode.Name = "tMode";
+            this.tMode.Size = new System.Drawing.Size(100, 26);
+            this.tMode.TabIndex = 3;
             // 
-            // textBox2
+            // tMinimal
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(40, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 4;
+            this.tMinimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tMinimal.Location = new System.Drawing.Point(40, 149);
+            this.tMinimal.Name = "tMinimal";
+            this.tMinimal.Size = new System.Drawing.Size(100, 26);
+            this.tMinimal.TabIndex = 4;
             // 
-            // textBox3
+            // tMaximum
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(40, 258);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 5;
+            this.tMaximum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tMaximum.Location = new System.Drawing.Point(40, 258);
+            this.tMaximum.Name = "tMaximum";
+            this.tMaximum.Size = new System.Drawing.Size(100, 26);
+            this.tMaximum.TabIndex = 5;
             // 
-            // checkBox1
+            // cMixed
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(40, 319);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(51, 17);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Misto";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cMixed.AutoSize = true;
+            this.cMixed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cMixed.Location = new System.Drawing.Point(40, 319);
+            this.cMixed.Name = "cMixed";
+            this.cMixed.Size = new System.Drawing.Size(73, 28);
+            this.cMixed.TabIndex = 6;
+            this.cMixed.Text = "Misto";
+            this.cMixed.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -115,56 +119,97 @@
             this.dataGridView1.Size = new System.Drawing.Size(379, 249);
             this.dataGridView1.TabIndex = 7;
             // 
-            // button1
+            // bInsert
             // 
-            this.button1.Location = new System.Drawing.Point(216, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Pesquisar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bInsert.Location = new System.Drawing.Point(307, 298);
+            this.bInsert.Name = "bInsert";
+            this.bInsert.Size = new System.Drawing.Size(75, 32);
+            this.bInsert.TabIndex = 9;
+            this.bInsert.Text = "Inserir";
+            this.bInsert.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bDelete
             // 
-            this.button2.Location = new System.Drawing.Point(297, 298);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Inserir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bDelete.Location = new System.Drawing.Point(388, 298);
+            this.bDelete.Name = "bDelete";
+            this.bDelete.Size = new System.Drawing.Size(75, 32);
+            this.bDelete.TabIndex = 10;
+            this.bDelete.Text = "Apagar";
+            this.bDelete.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // bUpdate
             // 
-            this.button3.Location = new System.Drawing.Point(378, 298);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Apagar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bUpdate.Location = new System.Drawing.Point(469, 298);
+            this.bUpdate.Name = "bUpdate";
+            this.bUpdate.Size = new System.Drawing.Size(78, 32);
+            this.bUpdate.TabIndex = 11;
+            this.bUpdate.Text = "Atualizar";
+            this.bUpdate.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // bQuery
             // 
-            this.button4.Location = new System.Drawing.Point(459, 298);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Atualizar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bQuery.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bQuery.Location = new System.Drawing.Point(218, 298);
+            this.bQuery.Name = "bQuery";
+            this.bQuery.Size = new System.Drawing.Size(83, 32);
+            this.bQuery.TabIndex = 12;
+            this.bQuery.Text = "Pesquisar";
+            this.bQuery.UseVisualStyleBackColor = true;
+            // 
+            // rAll
+            // 
+            this.rAll.AutoSize = true;
+            this.rAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rAll.Location = new System.Drawing.Point(587, 65);
+            this.rAll.Name = "rAll";
+            this.rAll.Size = new System.Drawing.Size(71, 24);
+            this.rAll.TabIndex = 13;
+            this.rAll.TabStop = true;
+            this.rAll.Text = "Todos";
+            this.rAll.UseVisualStyleBackColor = true;
+            // 
+            // rMixed
+            // 
+            this.rMixed.AutoSize = true;
+            this.rMixed.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rMixed.Location = new System.Drawing.Point(587, 100);
+            this.rMixed.Name = "rMixed";
+            this.rMixed.Size = new System.Drawing.Size(65, 24);
+            this.rMixed.TabIndex = 14;
+            this.rMixed.TabStop = true;
+            this.rMixed.Text = "Misto";
+            this.rMixed.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(583, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 24);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Filtro";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(592, 381);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(683, 394);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.rMixed);
+            this.Controls.Add(this.rAll);
+            this.Controls.Add(this.bQuery);
+            this.Controls.Add(this.bUpdate);
+            this.Controls.Add(this.bDelete);
+            this.Controls.Add(this.bInsert);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cMixed);
+            this.Controls.Add(this.tMaximum);
+            this.Controls.Add(this.tMinimal);
+            this.Controls.Add(this.tMode);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -181,15 +226,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TextBox tMode;
+        private System.Windows.Forms.TextBox tMinimal;
+        private System.Windows.Forms.TextBox tMaximum;
+        private System.Windows.Forms.CheckBox cMixed;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button bInsert;
+        private System.Windows.Forms.Button bDelete;
+        private System.Windows.Forms.Button bUpdate;
+        private System.Windows.Forms.Button bQuery;
+        private System.Windows.Forms.RadioButton rAll;
+        private System.Windows.Forms.RadioButton rMixed;
+        private System.Windows.Forms.Label label4;
     }
 }
 
