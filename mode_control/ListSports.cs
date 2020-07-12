@@ -65,5 +65,16 @@ namespace mode_control
                 base.Remove(item);
             }
         }
+
+        // Update data
+        public void Update(Sports obj)
+        {
+            Sports item = Query(obj.Mode);
+
+            if (item != null)
+            {
+                item.toJson = obj.JsonSerialize();
+            }
+        }
     }
 }
