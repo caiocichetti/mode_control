@@ -12,3 +12,4 @@ D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control
 D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.csproj.CopyComplete
 D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.exe
 D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.pdb
+D:\Biblioteca\Documentos\GitHub\mode_control\mode_control\obj\Debug\mode_control.Form1.resources
