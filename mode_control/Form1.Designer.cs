@@ -128,6 +128,7 @@
             this.bInsert.TabIndex = 9;
             this.bInsert.Text = "Inserir";
             this.bInsert.UseVisualStyleBackColor = true;
+            this.bInsert.Click += new System.EventHandler(this.bInsert_Click);
             // 
             // bDelete
             // 
@@ -138,6 +139,7 @@
             this.bDelete.TabIndex = 10;
             this.bDelete.Text = "Apagar";
             this.bDelete.UseVisualStyleBackColor = true;
+            this.bDelete.Click += new System.EventHandler(this.bDelete_Click);
             // 
             // bUpdate
             // 
@@ -148,6 +150,7 @@
             this.bUpdate.TabIndex = 11;
             this.bUpdate.Text = "Atualizar";
             this.bUpdate.UseVisualStyleBackColor = true;
+            this.bUpdate.Click += new System.EventHandler(this.bUpdate_Click);
             // 
             // bQuery
             // 
@@ -158,6 +161,7 @@
             this.bQuery.TabIndex = 12;
             this.bQuery.Text = "Pesquisar";
             this.bQuery.UseVisualStyleBackColor = true;
+            this.bQuery.Click += new System.EventHandler(this.bQuery_Click);
             // 
             // rAll
             // 
@@ -170,6 +174,7 @@
             this.rAll.TabStop = true;
             this.rAll.Text = "Todos";
             this.rAll.UseVisualStyleBackColor = true;
+            this.rAll.CheckedChanged += new System.EventHandler(this.rAll_CheckedChanged);
             // 
             // rMixed
             // 
@@ -182,6 +187,7 @@
             this.rMixed.TabStop = true;
             this.rMixed.Text = "Misto";
             this.rMixed.UseVisualStyleBackColor = true;
+            this.rMixed.CheckedChanged += new System.EventHandler(this.rMixed_CheckedChanged);
             // 
             // label4
             // 

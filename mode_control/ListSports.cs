@@ -11,19 +11,28 @@ namespace mode_control
     public class ListSports : List<Sports>
     {
         // Path name defined for the development environment
-        string fileName = "C:\\sports.dat";
+        string fileName = "C:\\esportes.txt";
 
         // Constructor
         public ListSports()
             : base()
         {
-
+            load();
         }
 
         // Destructor
         ~ListSports()
         {
             save();
+        }
+
+        //Insert
+        public void Add(Sports obj)
+        {
+            if (!alreadyExist(obj))
+            {
+                base.Add(obj);
+            }
         }
 
         // Consult data
