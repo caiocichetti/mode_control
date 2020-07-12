@@ -114,11 +114,30 @@ namespace mode_control
                         }
                     }
                 }
-                catch{}
+                catch { }
 
                 input.Close();
             }
-            catch{}
+            catch { }
+        }
+
+        //  Burn to disc
+        private void save()
+        {
+            try
+            {
+                StreamWriter Saida = new StreamWriter(fileName, false);
+                foreach (Sports row in this)
+                {
+                    try
+                    {
+                        Saida.WriteLine(row.JsonSerialize());
+                    }
+                    catch { }
+                }
+                Saida.Close();
+            }
+            catch { }
         }
     }
 }
