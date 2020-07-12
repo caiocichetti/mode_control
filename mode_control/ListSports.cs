@@ -106,11 +106,11 @@ namespace mode_control
                 {
                     while ((row = input.ReadLine()) != null)
                     {
-                        Sports novo = new Sports("", 0, 0, false);
-                        novo.toJson = row;
-                        if (novo.Mode.Length > 0)
+                        Sports newSport = new Sports("", 0, 0, false);
+                        newSport.toJson = row;
+                        if (newSport.Mode.Length > 0)
                         {
-                            this.Add(novo);
+                            this.Add(newSport);
                         }
                     }
                 }
@@ -126,16 +126,16 @@ namespace mode_control
         {
             try
             {
-                StreamWriter Saida = new StreamWriter(fileName, false);
+                StreamWriter output = new StreamWriter(fileName, false);
                 foreach (Sports row in this)
                 {
                     try
                     {
-                        Saida.WriteLine(row.JsonSerialize());
+                        output.WriteLine(row.JsonSerialize());
                     }
                     catch { }
                 }
-                Saida.Close();
+                output.Close();
             }
             catch { }
         }
